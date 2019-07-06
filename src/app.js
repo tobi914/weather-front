@@ -9,6 +9,9 @@ const viewsPath = path.join(__dirname, '../public/templates/views');
 const partialsPath = path.join(__dirname, '../public/templates/partials');
 const app = express();
 
+const port = process.env.PORT || 3001;
+console.log(port);
+
 // Setup handlebars engine and views location
 app.set('view engine', 'hbs');
 app.set('views', viewsPath);
