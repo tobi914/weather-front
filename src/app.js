@@ -99,6 +99,6 @@ app.get('*', (req, res) => {
   });
 });
 
-app.listen(3001, () => {
+app.listen(port, () => {
   console.log('Server started correctly on port 3000');
 });
